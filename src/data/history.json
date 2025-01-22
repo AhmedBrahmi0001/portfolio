@@ -1,0 +1,46 @@
+[
+  {
+    "role": "Software Engineer(PFE project)",
+    "organisation": "DIGMACO",
+    "startDate": "april, 2024",
+    "endDate": "july,2024",
+    "experiences": [
+      "User registration and authentication.",
+      "Product navigation and search Secure order processing and payments",
+      "Real-time order tracking with Pusher ",
+      "Push notifications for order updates and promotions",
+      "Product and delivery service rating system",
+      "Customer support and returns management system",
+      "Order management with tracking and fulfillment",
+      "Analytics tools for customer performance and behavior",
+      "Secure payment and transaction management"
+    ],
+    "imageSrc": "history/logo5.png"
+  },
+  {
+    "role": "Software Engineer(internship project)",
+    "organisation": "DIGMACO",
+    "startDate": "june, 2023",
+    "endDate": "Aug, 2023",
+    "experiences": [
+      "Employee management",
+      "Tracking employee delays (“delay management”)",
+      "Reporting on lateness and employee performance",
+      "Notifications for delays or time violations",
+      "Simple and intuitive user interface for administrator",
+      "Secure authentication system for administrator",
+      "Managing access permissions for different users"
+    ],
+    "imageSrc": "history/employee.jpg"
+  },
+  {
+    "role": " TunisieTelecom | Technician internship",
+    "organisation": "TunisieTelecom",
+    "startDate": "Apr, 2020",
+    "endDate": "Jun, 2020",
+    "experiences": [
+      "an internship in telecommunications Assistance in the maintenance and operation of networks helps with resolution of technical problems"
+    ],
+    "imageSrc": "history/telecom.jpg"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "React,R.native",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Node",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "MySql",
+    "imageSrc": "skills/mysql.png"
+  },
+  {
+    "title": "Laravel",
+    "imageSrc": "skills/Laravel.png"
+  },
+  {
+    "title": "springboot",
+    "imageSrc": "skills/spring-icon.png"
+  },
+  {
+    "title": "PHP",
+    "imageSrc": "skills/PHP-logo.png"
+  },
+  {
+    "title": "figma",
+    "imageSrc": "skills/figma.png"
+  }
+]
