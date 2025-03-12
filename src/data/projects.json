@@ -1,16 +1,16 @@
 [
   {
     "title": "DeliverEase",
-    "imageSrc": "projects/delivereasy.jpg",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "imageSrc": "projects/deliver.png",
+    "description": "Developed DeliverEase, a web and mobile app for seamless ordering and delivery, integrating real-time tracking and secure payments.",
     "skills": ["React", "React native", "laravel", "MySql"],
-    "demo": "https://github-production-user-asset-6210df.s3.amazonaws.com/150264112/398591014-4ef15ae1-6a9c-4734-9cda-70dda7b5135f.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250121T145409Z&X-Amz-Expires=300&X-Amz-Signature=7961eb63e11da0764413463680117fc0db6957301260b0f98a345d98d18c5b2d&X-Amz-SignedHeaders=host",
+    "demo": "https://drive.google.com/file/d/1l7_G9N4nwBM26ITbI--ygl4h9IanmGly/view?usp=sharing",
     "source": "https://github.com/AhmedBrahmi0001/DeliverEase"
   },
   {
     "title": "Employee late management",
     "imageSrc": "projects/gestion.svg",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "description": "Developed Delay Management, an app for tracking employee performance and automating delay reporting, reducing manual work by one-third.",
     "skills": ["php", "javascripts", "HTML5", "CSS3"],
     "demo": "https://www.example.com",
     "source": "https://github.com/AhmedBrahmi0001/Gestion-de-retrad-"
@@ -18,9 +18,17 @@
   {
     "title": "Fitness exercices",
     "imageSrc": "projects/fitness.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
+    "description": "Designed a responsive fitness app with exercise filtering, detailed views, and seamless integration of data from two APIs for an enhanced user experience.",
     "skills": ["React", "Rapidapi", "Material-UI"],
     "demo": "https://www.example.com",
     "source": "https://github.com/AhmedBrahmi0001/Gym-project-"
+  },
+  {
+    "title": "Ecommerce",
+    "imageSrc": "projects/ec1.png",
+    "description": "Developed a full-stack eCommerce platform using MERN (MongoDB, Express.js, React, Node.js), featuring secure authentication, product management, cart functionality.",
+    "skills": ["MERN-STACK"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/AhmedBrahmi0001/ecommerce"
   }
 ]

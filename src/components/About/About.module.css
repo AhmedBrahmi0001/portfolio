@@ -2,41 +2,54 @@
 
 .container {
   position: relative;
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
+  background-color: rgba(
+    12,
+    12,
+    12,
+    0.8
+  ); /* Darker background for better contrast */
+  border-radius: 20px; /* Smoother corners */
+  padding: 80px; /* Increased padding for better spacing */
+  margin-top: 100px; /* Adjusted margin for better spacing */
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
+  font-size: 40px; /* Larger font size for emphasis */
+  font-weight: 800; /* Bolder font weight */
+  letter-spacing: 2px; /* Increased letter spacing */
   text-transform: uppercase;
+  text-align: center; /* Centered title */
+  margin-bottom: 50px; /* Added margin for spacing */
 }
 
 .content {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start; /* Align items to the top */
+  gap: 60px; /* Added gap between image and text */
 }
 
 .aboutImage {
-  width: 35%;
-  border-radius: 10%; /* Makes the image circular */
+  width: 40%; /* Slightly larger image */
+  border-radius: 20px; /* Smoother corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
 
-
+.aboutImage:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .aboutItems {
   color: var(--color-text);
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px; /* Reduced gap for tighter spacing */
 }
 
 .aboutItem {
@@ -45,7 +58,7 @@
   align-items: center;
   border-radius: 20px;
   list-style: none;
-  padding: 25px;
+  padding: 30px; /* Increased padding for better spacing */
   background-image: linear-gradient(
     90deg,
     rgba(165, 215, 232, 0.42) 0%,
@@ -53,44 +66,68 @@
   );
   background-size: 0 100%;
   background-repeat: no-repeat;
-  transition: 0.4s;
+  transition: all 0.4s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
 }
 
 .aboutItem:hover {
   background-size: 100% 100%;
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
-.aboutItem h3 {
-  font-size: 25px;
-  font-weight: 600;
+.aboutItem img {
+  width: 60px; /* Fixed icon size */
+  height: 60px;
+  margin-right: 20px; /* Added margin for spacing */
 }
 
-.aboutItem p {
-  font-size: 25px;
+.aboutItemText h3 {
+  font-size: 28px; /* Larger font size for headings */
+  font-weight: 700; /* Bolder font weight */
+  margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.aboutItemText p {
+  font-size: 18px; /* Slightly smaller font size for readability */
+  line-height: 1.6; /* Improved line height */
+  color: var(--color-text-secondary); /* Secondary text color for contrast */
 }
 
 @media screen and (max-width: 830px) {
   .container {
     background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 40px 20px; /* Adjusted padding for mobile */
+    margin-top: 60px; /* Reduced margin for mobile */
+  }
+
+  .title {
+    font-size: 32px; /* Smaller font size for mobile */
   }
 
   .content {
     flex-direction: column;
+    align-items: center; /* Centered content for mobile */
   }
 
   .aboutImage {
-    display: none;
-    
+    width: 80%; /* Larger image for mobile */
+    margin-bottom: 30px; /* Added margin for spacing */
   }
 
   .aboutItems {
-    margin-top: 29px;
+    gap: 30px; /* Reduced gap for mobile */
   }
 
   .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 20px; /* Reduced padding for mobile */
+  }
+
+  .aboutItemText h3 {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  .aboutItemText p {
+    font-size: 16px; /* Smaller font size for mobile */
   }
 }

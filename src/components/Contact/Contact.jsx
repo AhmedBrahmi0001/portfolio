@@ -1,5 +1,4 @@
 import React from "react";
-
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -13,20 +12,30 @@ export const Contact = () => {
       <ul className={styles.links}>
         <li className={styles.link}>
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:myemail@email.com">ahmedbrahmi287@gmail.com</a>
+          <a href="mailto:ahmedbrahmi287@gmail.com">ahmedbrahmi287@gmail.com</a>
         </li>
         <li className={styles.link}>
           <img
             src={getImageUrl("contact/linkedinIcon.png")}
             alt="LinkedIn icon"
           />
-          <a href="https://www.linkedin.com/in/ahmed-brahmi-307aba257/">
-            ahmed brahmi
+          <a
+            href="https://www.linkedin.com/in/ahmed-brahmi-307aba257/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
           </a>
         </li>
         <li className={styles.link}>
           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://github.com/AhmedBrahmi0001"> ahmed brahmi</a>
+          <a
+            href="https://github.com/AhmedBrahmi0001"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </li>
       </ul>
     </footer>

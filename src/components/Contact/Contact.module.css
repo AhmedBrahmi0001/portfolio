@@ -7,21 +7,26 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   width: 100vw;
-  padding: 58px 10%;
-  gap: 10px;
+  padding: 40px 10%; /* Increased padding for better spacing */
+  gap: 40px; /* Increased gap for better spacing */
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
 }
 
 .text h2 {
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 4px;
+  font-size: 60px; /* Adjusted font size */
+  font-weight: 800; /* Bolder font weight */
+  letter-spacing: 2px; /* Adjusted letter spacing */
+  margin-bottom: 20px; /* Added margin for spacing */
+  color: var(--color-text); /* Ensure text color */
 }
 
 .text p {
-  font-size: 40px;
+  font-size: 24px; /* Adjusted font size */
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px; /* Adjusted letter spacing */
+  color: var(--color-text-secondary); /* Secondary text color for contrast */
 }
 
 .links {
@@ -29,36 +34,65 @@
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
-  gap: 26px;
+  gap: 20px; /* Adjusted gap for better spacing */
 }
 
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 20px; /* Adjusted gap for better spacing */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.link:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.link img {
+  width: 40px; /* Fixed icon size */
+  height: 40px;
 }
 
 .link a {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  font-size: 20px; /* Adjusted font size */
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.link a:hover {
+  color: var(--color-primary); /* Change color on hover */
 }
 
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
-    gap: 23px;
+    gap: 30px; /* Adjusted gap for mobile */
+    padding: 60px 10%; /* Adjusted padding for mobile */
   }
 
   .text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; /* Centered text for mobile */
+  }
+
+  .text h2 {
+    font-size: 48px; /* Smaller font size for mobile */
+  }
+
+  .text p {
+    font-size: 20px; /* Smaller font size for mobile */
   }
 
   .links {
     align-items: center;
+  }
+
+  .link a {
+    font-size: 18px; /* Smaller font size for mobile */
   }
 }

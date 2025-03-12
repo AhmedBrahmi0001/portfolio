@@ -1,82 +1,74 @@
 @import "../../vars.css";
 
 .container {
-  color: var(--color-text);
-  margin-top: 79px;
+  position: relative;
+  background-color: rgba(
+    12,
+    12,
+    12,
+    0.8
+  ); /* Darker background for better contrast */
+  border-radius: 20px; /* Smoother corners */
+  padding: 80px; /* Increased padding for better spacing */
+  margin-top: 100px; /* Adjusted margin for better spacing */
+  z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+:root {
+  --color-text: #ffffff; /* White text */
+  --color-text-secondary: #cccccc; /* Light gray for secondary text */
 }
 
 .title {
   color: var(--color-text);
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
+  font-size: 40px; /* Larger font size for emphasis */
+  font-weight: 800; /* Bolder font weight */
+  letter-spacing: 2px; /* Increased letter spacing */
   text-transform: uppercase;
+  text-align: center; /* Centered title */
+  margin-bottom: 50px; /* Added margin for spacing */
 }
 
 .content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 14px;
-}
-
-.skills {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
-}
-
-.skill {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 11px;
-}
-
-.skillImageContainer {
-  background-color: var(--color-secondary);
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-}
-
-.skillImageContainer img {
-  width: 75px;
-}
-
-.skill p {
-  font-size: 25px;
-  font-family: var(--font-roboto);
-  font-weight: 500;
+  gap: 60px; /* Increased gap for better spacing */
 }
 
 .history {
-  width: 45%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px; /* Increased gap for better spacing */
 }
 
 .historyItem {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 17px;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  border-radius: 10px;
-  padding: 24px;
+  align-items: flex-start;
+  gap: 20px; /* Increased gap for better spacing */
+  background: linear-gradient(
+    90deg,
+    rgba(25, 55, 109, 0.8) 0%,
+    rgba(25, 55, 109, 0) 100%
+  );
+  border-radius: 15px; /* Smoother corners */
+  padding: 30px; /* Increased padding for better spacing */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
 }
 
-.historyItem img {
-  width: 80px;
-  border-radius: 10px;
+.historyItem:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.historyImage {
+  width: 80px; /* Fixed image size */
+  height: 80px;
+  border-radius: 15px; /* Smoother corners */
+  object-fit: cover; /* Ensures image fits well */
 }
 
 .historyItemDetails {
@@ -84,38 +76,102 @@
 }
 
 .historyItemDetails h3 {
-  font-size: 30px;
-  font-weight: 500;
+  color: var(--color-text);
+  font-size: 28px; /* Larger font size for headings */
+  font-weight: 700; /* Bolder font weight */
+  margin-bottom: 10px; /* Added margin for spacing */
 }
 
 .historyItemDetails p {
-  font-size: 20px;
-  font-weight: 300;
+  color: var(--color-text-secondary); /* Secondary text color for contrast */
+  font-size: 18px; /* Smaller font size for readability */
+  font-weight: 400; /* Adjusted font weight */
+  margin-bottom: 15px; /* Added margin for spacing */
 }
 
 .historyItemDetails ul {
-  margin-top: 6px;
+  margin-top: 10px; /* Added margin for spacing */
   list-style-position: inside;
-  font-size: 25px;
+  font-size: 18px; /* Smaller font size for readability */
   list-style-type: disc;
-  margin-left: 17px;
+  margin-left: 20px; /* Adjusted margin for better alignment */
+  padding-left: 0;
+  color: var(--color-text-secondary); /* Secondary text color for contrast */
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Increased gap for better spacing */
+  justify-content: center; /* Centered skills */
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Increased gap for better spacing */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.skill:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.skillImageContainer {
+  background-color: var(--color-secondary);
+  border-radius: 50%; /* Circular container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+.skillImageContainer img {
+  width: 60px; /* Fixed icon size */
+}
+
+.skill p {
+  color: var(--color-text);
+  font-size: 20px; /* Smaller font size for readability */
+  font-family: var(--font-roboto);
+  font-weight: 500;
 }
 
 @media screen and (max-width: 830px) {
+  .container {
+    background-color: transparent;
+    padding: 40px 20px; /* Adjusted padding for mobile */
+    margin-top: 60px; /* Reduced margin for mobile */
+  }
+
+  .title {
+    font-size: 32px; /* Smaller font size for mobile */
+  }
+
   .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
+    gap: 30px; /* Reduced gap for mobile */
   }
 
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+  .historyItem {
+    padding: 20px; /* Reduced padding for mobile */
   }
 
-  .history {
-    width: 100%;
-    gap: 9px;
+  .historyItemDetails h3 {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  .historyItemDetails p {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .historyItemDetails ul {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .skill p {
+    font-size: 18px; /* Smaller font size for mobile */
   }
 }

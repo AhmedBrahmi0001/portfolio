@@ -3,26 +3,49 @@
 .container {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 15px; /* Smoother corners */
   background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
-  box-shadow: 0 16px 14px 0 #04152d;
-  padding: 18px 24px;
+  box-shadow: 0 16px 14px 0 rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+  padding: 20px 24px; /* Adjusted padding */
   max-width: 345px;
+  height: 500px; /* Fixed height for all cards */
+  box-sizing: border-box; /* Include padding in the height */
+  overflow: hidden; /* Prevent content from overflowing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.container:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 20px 18px 0 rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
 }
 
 .image {
-  margin-bottom: 26px;
+  margin-bottom: 20px; /* Adjusted margin */
+  width: 100%; /* Ensure image takes full width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 200px; /* Limit image height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 10px;
 }
 
 .title {
-  font-size: 25px;
+  font-size: 24px; /* Adjusted font size */
   font-weight: 700;
+  margin-bottom: 10px; /* Added margin for spacing */
+  color: var(--color-text); /* Ensure text color */
 }
 
 .description {
   margin-top: 6px;
-  font-size: 25px;
+  font-size: 16px; /* Adjusted font size */
   font-weight: 400;
+  flex-grow: 1; /* Allow description to take up remaining space */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  color: var(--color-text-secondary); /* Secondary text color for contrast */
 }
 
 .skills {
@@ -36,16 +59,17 @@
 }
 
 .skill {
-  font-size: 25px;
+  font-size: 14px; /* Adjusted font size */
   font-weight: 400;
   border-radius: 100px;
   background: var(--color-dark);
-  padding: 2px 22px;
+  padding: 4px 12px; /* Adjusted padding */
+  color: var(--color-text); /* Ensure text color */
 }
 
 .links {
   width: 100%;
-  margin-top: 26px;
+  margin-top: 20px; /* Adjusted margin */
   display: flex;
   justify-content: space-around;
 }
@@ -53,9 +77,15 @@
 .link {
   text-decoration: none;
   color: var(--color-text);
-  font-size: 30px;
+  font-size: 16px; /* Adjusted font size */
   font-weight: 600;
   border-radius: 100px;
   background: var(--color-primary);
-  padding: 1px 22px;
+  padding: 8px 20px; /* Adjusted padding */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+.link:hover {
+  background: var(--color-primary-dark); /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
 }

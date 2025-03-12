@@ -8,10 +8,12 @@
 }
 
 .title {
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 1.75px;
+  font-size: 40px; /* Larger font size for emphasis */
+  font-weight: 800; /* Bolder font weight */
+  letter-spacing: 2px; /* Increased letter spacing */
   text-transform: uppercase;
+  text-align: center; /* Centered title */
+  margin-bottom: 50px; /* Added margin for spacing */
 }
 
 .projects {
@@ -21,6 +23,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 30px; /* Increased gap for better spacing */
   width: 100%;
 }

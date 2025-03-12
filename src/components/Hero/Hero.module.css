@@ -5,10 +5,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 49px;
+  margin-top: 80px; /* Increased margin for better spacing */
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
+  padding: 40px 0; /* Added padding for better spacing */
 }
 
 .content {
@@ -17,12 +18,13 @@
   align-items: flex-start;
   color: var(--color-text);
   z-index: 1;
+  max-width: 600px; /* Limit content width for better readability */
 }
 
 .title {
   font-size: 72px;
   font-weight: 900;
-  margin-bottom: 33px;
+  margin-bottom: 24px; /* Reduced margin for tighter spacing */
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
@@ -31,31 +33,44 @@
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  line-height: 1.2; /* Improved line height for better readability */
 }
 
 .description {
-  font-size: 30px;
+  font-size: 24px; /* Slightly smaller font size for better readability */
   font-family: var(--font-roboto);
-  margin-bottom: 52px;
+  margin-bottom: 40px; /* Adjusted margin for better spacing */
+  line-height: 1.6; /* Improved line height */
+  color: var(
+    --color-text-secondary
+  ); /* Use a secondary text color for contrast */
 }
 
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
-  border-radius: 100px;
-  font-size: 30px;
+  border-radius: 50px;
+  font-size: 24px; /* Slightly smaller font size */
   font-weight: 600;
-  padding: 17px 26px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 15px 30px; /* Adjusted padding for better proportions */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.contactBtn:hover {
+  background-color: var(--color-primary-dark); /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .heroImg {
-  width: 30%;
+  width: 350px; /* Fixed width for better control */
+  height: 350px; /* Fixed height for better control */
   z-index: 1;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover; /* Ensures image fills the circle */
-
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--color-primary); /* Added border for emphasis */
   animation-name: floating;
   animation-duration: 3s;
   animation-iteration-count: infinite;
@@ -79,7 +94,7 @@
   width: 50vw;
   height: 50vw;
   min-width: 350px;
-  min-width: 350px;
+  min-height: 350px;
   top: -128px;
   left: -10vw;
   border-radius: 764px;
@@ -93,7 +108,7 @@
   width: 70vw;
   height: 50vw;
   min-width: 350px;
-  min-width: 250px;
+  min-height: 250px;
   top: 246px;
   right: -25vw;
   border-radius: 764px;
@@ -105,9 +120,26 @@
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
+    align-items: center;
+    text-align: center; /* Center-align text for mobile */
+    margin-top: 40px; /* Adjusted margin for mobile */
   }
 
   .content {
     align-items: center;
+  }
+
+  .title {
+    font-size: 48px; /* Smaller font size for mobile */
+  }
+
+  .description {
+    font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .heroImg {
+    width: 250px; /* Smaller image for mobile */
+    height: 250px;
+    margin-bottom: 20px; /* Added margin for spacing */
   }
 }
